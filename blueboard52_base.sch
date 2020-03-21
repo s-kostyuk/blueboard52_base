@@ -5,9 +5,9 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "BlueBoard52 - Base Board"
-Date "2019-10-27"
-Rev "v0.1"
-Comp "Laboratory 301i, DA Department, NURE"
+Date "2020-03-22"
+Rev "v0.2"
+Comp "Student's Laboratory, DA Department, NURE"
 Comment1 ""
 Comment2 ""
 Comment3 "Reviewed by ???????"
@@ -651,76 +651,86 @@ Wire Notes Line
 Wire Notes Line
 	6400 2000 6400 2200
 Wire Wire Line
-	10100 1150 9600 1150
-Text Label 9650 1150 0    50   ~ 0
+	10300 1100 9800 1100
+Text Label 9850 1100 0    50   ~ 0
 P0.9
-Text Label 9650 1050 0    50   ~ 0
+Text Label 9850 1000 0    50   ~ 0
 P0.10
 $Comp
 L Device:C C1
 U 1 1 5EAF4123
-P 9600 900
-F 0 "C1" H 9715 946 50  0000 L CNN
-F 1 "300pf" H 9715 855 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 9638 750 50  0001 C CNN
-F 3 "~" H 9600 900 50  0001 C CNN
-	1    9600 900 
+P 9800 850
+F 0 "C1" H 9915 896 50  0000 L CNN
+F 1 "300pf" H 9915 805 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 9838 700 50  0001 C CNN
+F 3 "~" H 9800 850 50  0001 C CNN
+	1    9800 850 
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C2
 U 1 1 5EAF5278
-P 9600 1300
-F 0 "C2" H 9715 1346 50  0000 L CNN
-F 1 "300pf" H 9715 1255 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 9638 1150 50  0001 C CNN
-F 3 "~" H 9600 1300 50  0001 C CNN
-	1    9600 1300
+P 9800 1250
+F 0 "C2" H 9915 1296 50  0000 L CNN
+F 1 "300pf" H 9915 1205 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 9838 1100 50  0001 C CNN
+F 3 "~" H 9800 1250 50  0001 C CNN
+	1    9800 1250
 	1    0    0    -1  
 $EndComp
-Connection ~ 9600 1150
+Connection ~ 9800 1100
 Wire Wire Line
-	9600 1150 9500 1150
-Connection ~ 9600 1050
+	9800 1100 9700 1100
+Connection ~ 9800 1000
 Wire Wire Line
-	9600 1050 9500 1050
+	9800 1000 9700 1000
 Wire Wire Line
-	9600 1050 10100 1050
+	9800 1000 10300 1000
 $Comp
 L power:GND #PWR0104
 U 1 1 5EB00065
-P 9300 750
-F 0 "#PWR0104" H 9300 500 50  0001 C CNN
-F 1 "GND" H 9305 577 50  0000 C CNN
-F 2 "" H 9300 750 50  0001 C CNN
-F 3 "" H 9300 750 50  0001 C CNN
-	1    9300 750 
+P 9500 700
+F 0 "#PWR0104" H 9500 450 50  0001 C CNN
+F 1 "GND" H 9505 527 50  0000 C CNN
+F 2 "" H 9500 700 50  0001 C CNN
+F 3 "" H 9500 700 50  0001 C CNN
+	1    9500 700 
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0108
 U 1 1 5EB007DB
-P 9300 1450
-F 0 "#PWR0108" H 9300 1200 50  0001 C CNN
-F 1 "GND" H 9305 1277 50  0000 C CNN
-F 2 "" H 9300 1450 50  0001 C CNN
-F 3 "" H 9300 1450 50  0001 C CNN
-	1    9300 1450
+P 9500 1400
+F 0 "#PWR0108" H 9500 1150 50  0001 C CNN
+F 1 "GND" H 9505 1227 50  0000 C CNN
+F 2 "" H 9500 1400 50  0001 C CNN
+F 3 "" H 9500 1400 50  0001 C CNN
+	1    9500 1400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9600 1450 9300 1450
+	9800 1400 9500 1400
 Wire Wire Line
-	9300 750  9600 750 
+	9500 700  9800 700 
 $Comp
 L Connector:Conn_01x02_Male J6
 U 1 1 5EADA80E
-P 10300 1150
-F 0 "J6" H 10272 1032 50  0000 R CNN
-F 1 "NFC" H 10272 1123 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 10300 1150 50  0001 C CNN
-F 3 "~" H 10300 1150 50  0001 C CNN
-	1    10300 1150
+P 10500 1100
+F 0 "J6" H 10472 982 50  0000 R CNN
+F 1 "NFC" H 10472 1073 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 10500 1100 50  0001 C CNN
+F 3 "~" H 10500 1100 50  0001 C CNN
+	1    10500 1100
 	-1   0    0    1   
 $EndComp
+Wire Notes Line
+	9300 650  9300 1650
+Wire Notes Line
+	9300 1650 10950 1650
+Wire Notes Line
+	10950 1650 10950 650 
+Wire Notes Line
+	10950 650  9300 650 
+Text Notes 10900 1600 2    50   ~ 0
+NFC
 $EndSCHEMATC
