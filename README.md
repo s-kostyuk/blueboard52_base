@@ -6,7 +6,7 @@ For example, it has bottom headers and may be stacked on a base board like this:
 
 If needed, the female headers may be soldered on top of the board for rapid prototyping, by analogy with Arduino Uno boards. But you may need to move pin annotations to the top header in this case.
 
-And finally, here is the board. The top and bottom view images are below. Manufacture with blue soldermask for the best results :)
+And finally, here is the board. The top and bottom view images are below. Manufacture with blue soldermask and white LED for the best results :)
 
 ![Top view of the board](./pictures_and_docs/blueboard52_base_front.png)
 ![Bottom view of the board](./pictures_and_docs/blueboard52_base_back.png)
