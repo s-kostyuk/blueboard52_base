@@ -174,67 +174,38 @@ P0.2
 Text Label 3400 1850 0    50   ~ 0
 P0.3
 $Comp
-L Connector:Conn_01x02_Male J5
-U 1 1 5DB6CB94
-P 8650 2650
-F 0 "J5" H 8623 2623 50  0000 R CNN
-F 1 "GND" H 8623 2532 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 8650 2650 50  0001 C CNN
-F 3 "~" H 8650 2650 50  0001 C CNN
-	1    8650 2650
-	-1   0    0    1   
-$EndComp
-$Comp
 L Connector:Conn_01x02_Male J4
 U 1 1 5DB70AFF
-P 8650 2300
-F 0 "J4" H 8623 2273 50  0000 R CNN
-F 1 "VCC" H 8623 2182 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 8650 2300 50  0001 C CNN
-F 3 "~" H 8650 2300 50  0001 C CNN
-	1    8650 2300
-	-1   0    0    1   
+P 8200 2350
+F 0 "J4" H 8173 2323 50  0000 R CNN
+F 1 "PWR" H 8173 2232 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 8200 2350 50  0001 C CNN
+F 3 "~" H 8200 2350 50  0001 C CNN
+	1    8200 2350
+	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0105
 U 1 1 5DB78A80
-P 8200 2850
-F 0 "#PWR0105" H 8200 2600 50  0001 C CNN
-F 1 "GND" H 8205 2677 50  0000 C CNN
-F 2 "" H 8200 2850 50  0001 C CNN
-F 3 "" H 8200 2850 50  0001 C CNN
-	1    8200 2850
+P 8400 2550
+F 0 "#PWR0105" H 8400 2300 50  0001 C CNN
+F 1 "GND" H 8405 2377 50  0000 C CNN
+F 2 "" H 8400 2550 50  0001 C CNN
+F 3 "" H 8400 2550 50  0001 C CNN
+	1    8400 2550
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:VCC #PWR0107
 U 1 1 5DB7AC38
-P 8200 2000
-F 0 "#PWR0107" H 8200 1850 50  0001 C CNN
-F 1 "VCC" H 8217 2173 50  0000 C CNN
-F 2 "" H 8200 2000 50  0001 C CNN
-F 3 "" H 8200 2000 50  0001 C CNN
-	1    8200 2000
+P 8400 2250
+F 0 "#PWR0107" H 8400 2100 50  0001 C CNN
+F 1 "VCC" H 8417 2423 50  0000 C CNN
+F 2 "" H 8400 2250 50  0001 C CNN
+F 3 "" H 8400 2250 50  0001 C CNN
+	1    8400 2250
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8450 2200 8200 2200
-Wire Wire Line
-	8200 2200 8200 2000
-Wire Wire Line
-	8200 2200 8200 2300
-Wire Wire Line
-	8200 2300 8450 2300
-Connection ~ 8200 2200
-Wire Wire Line
-	8450 2550 8200 2550
-Wire Wire Line
-	8200 2550 8200 2650
-Wire Wire Line
-	8450 2650 8200 2650
-Wire Wire Line
-	8200 2650 8200 2850
-Connection ~ 8200 2650
 $Comp
 L Device:Battery_Cell BT1
 U 1 1 5DB90D85
@@ -521,8 +492,8 @@ Wire Notes Line
 	7850 650  4150 650 
 Text Notes 7100 4200 0    50   ~ 0
 Expansion Headers
-Text Notes 7700 2200 2    50   ~ 0
-Power\nSelection
+Text Notes 7750 2200 2    50   ~ 0
+Short to use\nbattery power
 Wire Notes Line
 	7950 650  7950 1650
 Wire Notes Line
@@ -643,13 +614,9 @@ GND
 Wire Wire Line
 	6400 1950 7000 1950
 Wire Notes Line
-	7700 2200 6400 2200
+	7750 2000 7750 2200
 Wire Notes Line
-	7700 2000 6400 2000
-Wire Notes Line
-	7700 2000 7700 2200
-Wire Notes Line
-	6400 2000 6400 2200
+	6300 2000 6300 2200
 Wire Wire Line
 	10300 1100 9800 1100
 Text Label 9850 1100 0    50   ~ 0
@@ -733,4 +700,49 @@ Wire Notes Line
 	10950 650  9300 650 
 Text Notes 10900 1600 2    50   ~ 0
 NFC
+Wire Wire Line
+	8400 2250 8400 2350
+Wire Wire Line
+	8400 2450 8400 2550
+$Comp
+L Connector:Conn_01x02_Male J5
+U 1 1 5DB6CB94
+P 8700 2350
+F 0 "J5" H 8673 2323 50  0000 R CNN
+F 1 "PWR" H 8673 2232 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 8700 2350 50  0001 C CNN
+F 3 "~" H 8700 2350 50  0001 C CNN
+	1    8700 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0110
+U 1 1 5E7E0B59
+P 8900 2250
+F 0 "#PWR0110" H 8900 2100 50  0001 C CNN
+F 1 "VCC" H 8917 2423 50  0000 C CNN
+F 2 "" H 8900 2250 50  0001 C CNN
+F 3 "" H 8900 2250 50  0001 C CNN
+	1    8900 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8900 2250 8900 2350
+$Comp
+L power:GND #PWR0111
+U 1 1 5E7E43FA
+P 8900 2550
+F 0 "#PWR0111" H 8900 2300 50  0001 C CNN
+F 1 "GND" H 8905 2377 50  0000 C CNN
+F 2 "" H 8900 2550 50  0001 C CNN
+F 3 "" H 8900 2550 50  0001 C CNN
+	1    8900 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8900 2450 8900 2550
+Wire Notes Line
+	6300 2000 7750 2000
+Wire Notes Line
+	6300 2200 7750 2200
 $EndSCHEMATC
